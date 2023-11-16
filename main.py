@@ -21,7 +21,7 @@ def intro():
 
         - 해당 페이지는, :blue[첫 번째] 평가에 대한 :blue[수정] 단계 입니다.
 
-        - 먼저, 해당 링크의 구글 스프레드 시트를 켜주세요. (https://forms.gle/3SYCaN6iENEhUG5Y9)
+        - 먼저, 해당 링크의 구글 스프레드 시트를 켜주세요. (https://forms.gle/cVtSqh5vSc7vApx57)
 
         - 다음, 왼쪽 사이드바에서 선생님의 성함을 골라주세요. 한 분 당 33개의 데이터를 보게 됩니다.
 
@@ -66,7 +66,7 @@ def cha():
     option = st.selectbox(
         '몇 번째 노트를 보실 지 선택해주세요',
         note_choice)
-
+    st.write("Note가 두 개 이상인 경우 앞에 있는 노트는 chartdate 기준으로 먼저 발생한 노트입니다.")
     st.markdown(f":red[{option}]")
     
     text = tmp_df["new_text"].values[note_choice.index(option)].replace("\n","  \n  ").replace("# ","#")
@@ -129,7 +129,7 @@ def kim():
     option = st.selectbox(
         '몇 번째 노트를 보실 지 선택해주세요',
         note_choice)
-
+    st.write("Note가 두 개 이상인 경우 앞에 있는 노트는 chartdate 기준으로 먼저 발생한 노트입니다.")
     st.markdown(f":red[{option}]")
     
     text = tmp_df["new_text"].values[note_choice.index(option)].replace("\n","  \n  ").replace("# ","#")
@@ -192,7 +192,7 @@ def yun():
     option = st.selectbox(
         '몇 번째 노트를 보실 지 선택해주세요',
         note_choice)
-
+    st.write("Note가 두 개 이상인 경우 앞에 있는 노트는 chartdate 기준으로 먼저 발생한 노트입니다.")
     st.markdown(f":red[{option}]")
     
     text = tmp_df["new_text"].values[note_choice.index(option)].replace("\n","  \n  ").replace("# ","#")
