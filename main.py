@@ -90,6 +90,7 @@ def cha():
         st.success(f"**Choice D** : {choice_D}")
         st.success(f"**Choice E** : {choice_E}")
         st.error(f"**Answer** : {answer}")
+        st.error(f"**Reason** : {reason}")
 
 
 def kim():
@@ -153,6 +154,7 @@ def kim():
         st.success(f"**Choice D** : {choice_D}")
         st.success(f"**Choice E** : {choice_E}")
         st.error(f"**Answer** : {answer}")
+        st.error(f"**Reason** : {reason}")
 
 
 def yun():
@@ -216,6 +218,7 @@ def yun():
         st.success(f"**Choice D** : {choice_D}")
         st.success(f"**Choice E** : {choice_E}")
         st.error(f"**Answer** : {answer}")
+        st.error(f"**Reason** : {reason}")
 
 
 page_names_to_funcs = {
