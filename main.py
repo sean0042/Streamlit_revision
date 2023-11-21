@@ -21,9 +21,9 @@ def intro():
 
         - 해당 페이지는, :blue[첫 번째] 평가에 대한 :blue[수정] 단계 입니다.
 
-        - 먼저, 해당 링크의 구글 스프레드 시트를 켜주세요. (https://forms.gle/cVtSqh5vSc7vApx57)
+        - 먼저, 해당 링크의 구글 스프레드 시트를 켜주세요. (https://forms.gle/b3c7jdLpi4VFpaMM9)
 
-        - 다음, 왼쪽 사이드바에서 선생님의 성함을 골라주세요. 한 분 당 33개의 데이터를 보게 됩니다.
+        - 다음, 왼쪽 사이드바에서 선생님의 성함을 골라주세요. 한 분 당 50개의 데이터를 보게 됩니다.
 
         - 오른쪽 위에 메뉴 (...) 의 setting에서 wide screen을 선택하시면 해당 링크의 width가 넓어집니다. 편하신 방법으로 사용하시면 됩니다.
     """
@@ -41,14 +41,14 @@ def cha():
     def from_data_file(filename):
         return pd.read_csv(filename)
     
-    filtered_df = from_data_file("stage1_filtered_df.csv")
-    step3 = from_data_file("stage1_step3.csv")
+    filtered_df = from_data_file("stage2_filtered_df.csv")
+    step3 = from_data_file("stage2_step3.csv")
     patient_id = list(step3["Patient_ID"].values)
     patient_id_1 = patient_id[::3]
 
 
     index = st.number_input(
-    "**총 1부터 :red[33] 까지 있습니다. (오른쪽 + - 버튼으로 조절하거나 숫자를 입력한 후 Enter)**", 1, 33)
+    "**총 1부터 :red[50] 까지 있습니다. (오른쪽 + - 버튼으로 조절하거나 숫자를 입력한 후 Enter)**", 1, 50)
     index = index-1
     st.markdown("---")
     st.markdown(f"Index : :blue[{index+1}]")
@@ -105,14 +105,14 @@ def kim():
     def from_data_file(filename):
         return pd.read_csv(filename)
     
-    filtered_df = from_data_file("stage1_filtered_df.csv")
-    step3 = from_data_file("stage1_step3.csv")
+    filtered_df = from_data_file("stage2_filtered_df.csv")
+    step3 = from_data_file("stage2_step3.csv")
     patient_id = list(step3["Patient_ID"].values)
     patient_id_1 = patient_id[1::3]
 
 
     index = st.number_input(
-    "**총 1부터 :red[33] 까지 있습니다. (오른쪽 + - 버튼으로 조절하거나 숫자를 입력한 후 Enter)**", 1, 33)
+    "**총 1부터 :red[50] 까지 있습니다. (오른쪽 + - 버튼으로 조절하거나 숫자를 입력한 후 Enter)**", 1, 50)
     index = index-1
     st.markdown("---")
     st.markdown(f"Index : :blue[{index+1}]")
@@ -169,14 +169,14 @@ def yun():
     def from_data_file(filename):
         return pd.read_csv(filename)
     
-    filtered_df = from_data_file("stage1_filtered_df.csv")
-    step3 = from_data_file("stage1_step3.csv")
+    filtered_df = from_data_file("stage2_filtered_df.csv")
+    step3 = from_data_file("stage2_step3.csv")
     patient_id = list(step3["Patient_ID"].values)
     patient_id_1 = patient_id[2::3]
 
 
     index = st.number_input(
-    "**총 1부터 :red[33] 까지 있습니다. (오른쪽 + - 버튼으로 조절하거나 숫자를 입력한 후 Enter)**", 1, 33)
+    "**총 1부터 :red[50] 까지 있습니다. (오른쪽 + - 버튼으로 조절하거나 숫자를 입력한 후 Enter)**", 1, 50)
     index = index-1
     st.markdown("---")
     st.markdown(f"Index : :blue[{index+1}]")
