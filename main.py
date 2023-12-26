@@ -21,7 +21,7 @@ def intro():
 
         - 해당 페이지는, :blue[첫 번째] 평가에 대한 :blue[수정] 단계 입니다.
 
-        - 먼저, 해당 링크의 구글 스프레드 시트를 켜주세요. (https://docs.google.com/spreadsheets/d/1QKz75GgoabfvHqUfM2zjFayaBmOw13J0s_PpHzJW3IM/edit?usp=sharing)
+        - 먼저, 해당 링크의 구글 스프레드 시트를 켜주세요. 
 
         - 다음, 왼쪽 사이드바에서 선생님의 성함을 골라주세요. 한 분 당 50개의 데이터를 보게 됩니다.
 
@@ -41,8 +41,8 @@ def cha():
     def from_data_file(filename):
         return pd.read_csv(filename)
     
-    filtered_df = from_data_file("stage5_filtered_df.csv")
-    step3 = from_data_file("stage5_step3.csv")
+    filtered_df = from_data_file("stage6_filtered_df.csv")
+    step3 = from_data_file("stage6_step3.csv")
     patient_id = list(step3["Patient_ID"].values)
     patient_id_1 = patient_id[::3]
 
@@ -105,8 +105,8 @@ def kim():
     def from_data_file(filename):
         return pd.read_csv(filename)
     
-    filtered_df = from_data_file("stage5_filtered_df.csv")
-    step3 = from_data_file("stage5_step3.csv")
+    filtered_df = from_data_file("stage6_filtered_df.csv")
+    step3 = from_data_file("stage6_step3.csv")
     patient_id = list(step3["Patient_ID"].values)
     patient_id_1 = patient_id[1::3]
 
@@ -169,8 +169,8 @@ def yun():
     def from_data_file(filename):
         return pd.read_csv(filename)
     
-    filtered_df = from_data_file("stage5_filtered_df.csv")
-    step3 = from_data_file("stage5_step3.csv")
+    filtered_df = from_data_file("stage6_filtered_df.csv")
+    step3 = from_data_file("stage6_step3.csv")
     patient_id = list(step3["Patient_ID"].values)
     patient_id_1 = patient_id[2::3]
 
