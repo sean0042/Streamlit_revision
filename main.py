@@ -41,8 +41,8 @@ def cha():
     def from_data_file(filename):
         return pd.read_csv(filename)
     
-    filtered_df = from_data_file("stage6_filtered_df.csv")
-    step3 = from_data_file("stage6_step3.csv")
+    filtered_df = from_data_file("stage7_filtered_df.csv")
+    step3 = from_data_file("stage7_step3.csv")
     patient_id = list(step3["Patient_ID"].values)
     patient_id_1 = patient_id[::3]
 
@@ -105,8 +105,8 @@ def kim():
     def from_data_file(filename):
         return pd.read_csv(filename)
     
-    filtered_df = from_data_file("stage6_filtered_df.csv")
-    step3 = from_data_file("stage6_step3.csv")
+    filtered_df = from_data_file("stage7_filtered_df.csv")
+    step3 = from_data_file("stage7_step3.csv")
     patient_id = list(step3["Patient_ID"].values)
     patient_id_1 = patient_id[1::3]
 
@@ -169,8 +169,8 @@ def yun():
     def from_data_file(filename):
         return pd.read_csv(filename)
     
-    filtered_df = from_data_file("stage6_filtered_df.csv")
-    step3 = from_data_file("stage6_step3.csv")
+    filtered_df = from_data_file("stage7_filtered_df.csv")
+    step3 = from_data_file("stage7_step3.csv")
     patient_id = list(step3["Patient_ID"].values)
     patient_id_1 = patient_id[2::3]
 
